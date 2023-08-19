@@ -1,0 +1,20 @@
+{
+  "name": "links",
+  "version": "1.0.0",
+  "description": "My socail media profile",
+  "main": "index.html",
+  "scripts": {
+    "watch": "npx tailwindcss -i ./css/tailwind.css -o ./css/app.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "socail-media-profile"
+  },
+  "author": "Michelle Chang",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.15",
+    "boxicons": "^2.1.4",
+    "tailwindcss": "^3.3.3"
+  }
+}

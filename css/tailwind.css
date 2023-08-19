@@ -1,0 +1,23 @@
+/* 貼在用來寫樣式的css檔，範例這邊是 tailwind.css */
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+.card{
+    @apply bg-primary m-3 p-5 px-10 w-96 rounded-full shadow-lg flex justify-between items-center flex-row;
+}
+
+.container{
+    @apply flex justify-center items-center flex-col
+}
+
+body{
+    @apply flex justify-center items-center flex-col text-center bg-primary 
+}
+
+.dot{
+    @apply cursor-pointer rounded-full inline-block mx-0.5 w-3 h-3 bg-secondary opacity-50
+}
+
