@@ -1,14 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
 
-
-body{
-    background: linear-gradient(0deg, rgba(246,179,136,1) 0%, rgba(248,196,162,1) 8%, rgba(250,215,193,1) 20%, rgba(253,237,226,1) 59%, rgba(255,255,255,1) 100%); 
-    font-family: 'Noto Sans TC', sans-serif;
-    background-attachment: fixed;
-} 
+body {
+  background: linear-gradient(0deg, rgba(246, 179, 136, 1) 0%, rgba(248, 196, 162, 1) 8%, rgba(250, 215, 193, 1) 20%, rgba(253, 237, 226, 1) 59%, rgba(255, 255, 255, 1) 100%);
+  font-family: 'Noto Sans TC', sans-serif;
+  background-attachment: fixed;
+}
 
 .dot {
-    transition: background-color 0.6s ease;
-    transform: translateY(-3em);
+  transition: background-color 0.6s ease;
+  transform: translateY(-2.5em);
+}
+
+.slider {
+  display: none;
+  max-width: 500px;
+}
+
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
   }
+
+  to {
+    opacity: 1
+  }
+}
+
+.close-btn {
+  transform: translateX(16em) translateY(-2em);
+}
+
+.line-logo {
+  width: 2em;
+}
+
+@media screen and (max-width:640px) {
+  .close-btn {
+    transform: translateX(84vw) translateY(-2em);
+  }
+
+  .slider {
+    display: none;
+    max-width: 380px;
+  }
+}
+
